@@ -1,0 +1,49 @@
+<div class="container">
+  <h1>Employee Details</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Salary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of empdata">
+        <td>{{i.id}}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.age}}</td>
+        <td>{{i.salary}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<input type="text" #input>
+<button (click)="onClick(input.value)">Search
+</button>
+
+<div class="container">
+  <h1>New Salary Details</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <!-- <th>Id</th>
+        <th>Name</th>
+        <th>Age</th> -->
+        <th>Salary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of hike">
+        <!-- <td>{{i.id}}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.age}}</td> -->
+        <td>{{i}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<app-buttons></app-buttons>
